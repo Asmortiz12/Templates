@@ -7,7 +7,6 @@ import { CategoriesComponent } from './categories/categories.component';
 import { NoFoundPageComponent } from '../noFoundPage/no-found-page.component';
 
 const routes: Routes = [
-  //rutas protegidas
   {
     path: 'dashboard', component: PagesComponent, children: [
       { path: '', component: DashboardComponent },
@@ -22,7 +21,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [],
   imports: [
-    RouterModule.forChild(routes)
+    RouterModule.forRoot(routes)
   ],
   exports:[
     RouterModule
