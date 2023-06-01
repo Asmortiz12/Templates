@@ -8,17 +8,12 @@ import { AuthComponent } from './auth.component';
 
 @NgModule({
   declarations: [
-    LoginComponent,
     RegisterComponent,
+    LoginComponent,
     AuthComponent
   ],
   imports: [
     CommonModule
-  ], 
-  exports:[
-    LoginComponent,
-    RegisterComponent,
-    AuthComponent
-  ],
+  ]
 })
 export class AuthModule { }
